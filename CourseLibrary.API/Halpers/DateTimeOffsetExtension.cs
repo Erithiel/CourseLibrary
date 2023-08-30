@@ -2,7 +2,7 @@
 {
 	static class DateTimeOffsetExtension
 	{
-		public static int GetCurentAge(this DateTimeOffset birthDate)
+		public static int GetCurrentAge(this DateTimeOffset birthDate)
 		{
 			DateTimeOffset currentDate = DateTimeOffset.Now;
 			int age = currentDate.Year - birthDate.Year;
