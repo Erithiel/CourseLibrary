@@ -10,7 +10,7 @@ builder.Services.AddControllers(action =>
 {
 
 });
-
+builder.Services.AddTransient<IPropertyMappingService, PropertyMappingService>();
 builder.Services.AddScoped<ICourseLibraryRepository, CourseLibraryRepository>();
 builder.Services.AddDbContext<CourseLibraryContext>(options =>
 {
